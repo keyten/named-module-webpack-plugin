@@ -88,6 +88,7 @@ function getModuleName(code){
 function removeAsFromModuleCode(source){
     const {strNum} = getModuleName(source);
     source = source.split('\n');
+    // fixme: bug with '"export anything as me"; export {} as moduleName;' as they are on one line
     source[strNum] = source[strNum].replace(/\s*as\s*\'[a-zA-Z0-9_\-]+\'/, '')
     return source.join('\n');
 }
