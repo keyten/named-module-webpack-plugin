@@ -48,6 +48,8 @@ By default: `/^[a-zA-Z0-9\-_]+$/`.
 #### `moduleDir`
 The folder with all your modules.
 
+By default: `./src`.
+
 *Note: it will read all your files and dirs deeply each time so don't set it to `'/'`.*
 
 #### `moduleTest`
